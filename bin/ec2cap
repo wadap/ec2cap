@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+$: << File.expand_path('../../lib', __FILE__)
+require 'ec2cap/cli'
+
+Ec2cap::CLI.start
