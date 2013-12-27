@@ -34,7 +34,7 @@ module Ec2cap
       hosts.each do |host|
         servers.push "'#{host}'"
       end
-      line = "role :#{role} #{servers.join(',')}"
+      line = "role :#{role}, #{servers.join(',')}"
     end
   end
 end
